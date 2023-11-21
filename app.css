@@ -1,0 +1,269 @@
+/*CORPO DO SITE////////////////////////////////////////////////////////////////////////////*/
+
+*{margin: 0; padding: 0;
+    font-family: 'lato', sans-serif;
+   }
+   
+   body{
+       height: 100vh;
+       background-image:linear-gradient(rgba(238, 238, 238, 0.2),rgba(0,0,0,1.5)), url(IMG/fundo.png);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+   }
+
+
+   
+   .Abertura{
+       text-align: center;
+       position:absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       width: 100%;
+   }
+   
+   
+   
+   .Abertura span{
+       text-transform: uppercase;
+       display: inline-block;
+   }
+   
+   
+   
+   
+   @keyframes text{
+       0%{
+           font-family: Lobster Two;
+           color :#62a7df;
+           margin-bottom: -40px;}
+   }
+   
+   
+   
+   
+       .vertical-align {
+       position: relative;
+       top: 50%;
+       transform: translateY(-50%); /* Adicionar os prefixos dos navegadores */
+   }
+   
+   
+   
+   /*MENU/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+   
+   .logo{
+    float: left;
+    margin-top: 1%;
+    margin-left:1%;
+    margin-right:40%;
+   }
+
+    
+    
+   .Menu-Nav{
+       float: right;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       list-style: none;
+   }
+       
+   
+   #menu {
+       width: 100%; /*largura do menu*/	
+       margin: auto; /*para centralizar o menu*/
+       position: fixed;
+      
+   }
+   
+   #menu ul {
+       
+       list-style: none; /*para tirar o estilo original da lista*/
+       font-size: 17px; /*tamano da fonte*/
+   
+   
+   }
+   
+   #menu  li {
+       display: inline-block; /*colocar em linha*/
+   
+   }
+   
+   #menu ul li a {
+       bottom: 10px;
+       text-decoration: none; /*para tirar o traçado da link*/
+       color: rgb(0, 0, 0) ; /*cor do link*/
+       padding: 8px;
+       margin-right: 10px;
+       font-style:italic;
+       text-align: right;
+       
+       
+      
+   }
+   
+
+    #menu ul li a:hover {
+       color: #ffffff;
+       
+   }
+
+   /*rodape//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+   
+   footer.rodape{
+       position: absolute;
+       color:white;
+       bottom: 0px;
+       left: 0px;
+       width: 100%;
+   
+   }
+   
+   footer.rodape p{
+       font-family: sans-serif;
+       text-align: center;
+       font-size: 11px;
+       color: #ffffff;
+   }
+   /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+   /*LETRAS*/
+   
+   .h0{
+   
+       color:pink;
+       font-size: 150px;
+       text-shadow: 1px 1px 2px white, 0 0 25px gray, 0 0 5px darkblue; /*sombra do w3school*/
+       text-align: center; /*centralizar*/
+       font-family: 'Lobster', cursive; /*fonte com link do google font*/
+   }
+   
+   h1 {
+       color: pink;
+       font-size: 90px;
+       text-shadow: 1px 1px 2px white, 0 0 25px gray, 0 0 5px darkblue; /*sombra do w3school*/
+       text-align: center; /*centralizar*/
+       font-family: 'Indie Flower', cursive; /*fonte com link do google font*/
+   }
+   
+   
+   h2 {
+       color: silver;
+       font-size: 40px;
+       text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px darkblue; /*sombra do w3school*/
+       text-align: center; /*centralizar*/
+       font-family: 'Indie Flower', cursive; /*fonte com link do google font*/
+       }
+   
+   h4 {
+       color: white;
+       font-size: 30px;
+       text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px darkblue; /*sombra do w3school*/
+       text-align: center; /*centralizar*/
+       font-family: Satisfy, Lobster Two; /*fonte com link do google font*/
+   
+   }
+   
+   p{
+       text-align: center;
+   }
+
+   /*INSTA E FB////////////////////////////////////////////////////////////////////////////*/
+  /* .Rede ul{
+       z-index: 1;
+       display: flex;
+       position: fixed;
+       top:4%;
+       left: 10%;
+       transform: translate(-50%, -50%);
+   
+       
+   }
+   
+   .Rede ul li{
+       list-style: none;
+   }
+   
+   .Rede ul li a{
+       width: 40px;
+       height: 40px;
+       background: #fff;
+       text-align: center;
+       line-height: 40px;
+       font-size: 20px;
+       margin: 0 10px;
+       display: block;
+       border-radius: 50%;
+       position: relative;
+       overflow: hidden;
+       border: 1.8px solid #fff;
+       z-index: 1;
+   }
+   
+   .Rede ul li a .fa{
+       position: relative;
+       color: #262626;
+       transition: .5s;
+       z-index: 3;
+   }
+   
+   .Rede ul li a:hover .fa{
+       color:#fff;
+       transform: rotateY(360deg);
+   }
+   
+   .Rede ul li a:before{
+       content: '';
+       position: absolute;
+       top: 100%;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: #f00;
+       transition: .5s;
+       z-index: 2;
+   }
+   
+   .Rede ul li a:hover:before{
+       top:0;
+   
+   }
+   
+   .Rede ul li:nth-child(1) a:before{
+       background: #3b5999;
+   
+   }
+   
+   .Rede ul li:nth-child(2) a:before{
+       background: #e4405f;
+   
+   }
+   
+   .Rede ul li:nth-child(3) a:before{
+       background: #55acee;
+   
+   }
+   
+   .Rede ul li:nth-child(4) a:before{
+       background: #dd4b39;
+   
+   }
+   
+   .desc{
+       font-family: italic;
+       color: #FFC0CB;
+   }
+   
+   .boxum h2 {
+   color: #B03060; 
+   font-size: 20px;
+   }
+   .boxum p {
+   font-family: Arial,sans-serif; 
+   font-size: 16px; 
+   color:sian;
+   text-align: justify;
+   }*/
+
+   
